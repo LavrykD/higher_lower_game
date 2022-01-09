@@ -1,4 +1,3 @@
-from replit import clear
 import art
 import game_data
 import random
@@ -10,7 +9,6 @@ def generation():
 
 def lose():
   global SCORE
-  clear()
   print(art.logo)
   print(f"Sorry, you're wrong. Final score: {SCORE}.")
 
@@ -20,7 +18,6 @@ choice_A = generation()
 choice_B = generation()
 
 while not end_of_game:
-  clear()
   print(art.logo)
 
   if SCORE >= 1:
